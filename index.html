@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
 
   <div id="first">
@@ -16,28 +14,6 @@
     <span id="words"> </span>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('btn');
-      if (btn) {
-        btn.addEventListener('click', function() {
-          // Hide the button
-          btn.style.display = 'none';
-
-          // Change the ID of the 'first' element to 'heart' and update the text
-          const first = document.getElementById('first');
-          if (first) {
-            first.id = 'heart';
-          }
-
-          const words = document.getElementById('words');
-          if (words) {
-            words.innerText = "I love you";
-          }
-        });
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
